@@ -1,0 +1,158 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#090a18"><title>Siete días, siete sentimientos ♡</title>
+<style>
+:root{--bg:#090a18;--lav:#cbbaff;--pink:#ffbfd8;--ink:#f8f3ff;--muted:#c5bfd7;--line:#cdbbff40}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -10%,#34294e,#15142a 48%,var(--bg) 88%);color:var(--ink);font-family:Georgia,serif;min-height:100vh}#stars{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:0}.glow{position:fixed;width:250px;height:250px;border-radius:50%;filter:blur(90px);opacity:.14;pointer-events:none}.g1{background:#b58aff;top:10%;left:-110px}.g2{background:#ff8dbd;right:-110px;top:58%}main{position:relative;z-index:1;width:min(800px,100%);margin:auto;padding:28px 19px 65px}.music-player{position:fixed;z-index:5;right:13px;top:13px;width:min(330px,calc(100vw - 26px));border:1px solid var(--line);border-radius:18px;padding:12px 13px;color:var(--ink);background:#111022f2;backdrop-filter:blur(14px);box-shadow:0 12px 38px #0005;font:11px Arial}
+.music-top{display:flex;align-items:center;gap:9px}.music-note{width:31px;height:31px;flex:none;border:1px solid #cbbaff55;border-radius:50%;display:grid;place-items:center;color:var(--pink);font-size:16px}.track-meta{flex:1;min-width:0}.track-name{font-size:12px;color:#f5efff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.track-artist{font-size:10px;color:#aaa1bc;margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.music-controls{display:flex;align-items:center;justify-content:center;gap:8px;margin:10px 0 8px}.music-controls button,.music-bottom button{border:1px solid #cdbbff35;border-radius:50%;width:29px;height:29px;background:#ffffff08;color:#eee7ff;cursor:pointer;font-size:12px}.music-controls button.primary{width:35px;height:35px;background:#cbbaff20;border-color:#cbbaff80;color:#ffe4f0;font-size:15px}.music-controls button:focus-visible,.music-bottom button:focus-visible{outline:2px solid var(--pink);outline-offset:2px}.progress-row{display:flex;align-items:center;gap:7px;color:#aaa1bc;font-size:9px;font-variant-numeric:tabular-nums}.progress-row input{flex:1;min-width:0;accent-color:#e7bfdc;height:3px;cursor:pointer}.music-bottom{display:flex;align-items:center;justify-content:space-between;margin-top:8px;color:#aaa1bc}.volume-wrap{display:flex;align-items:center;gap:6px}.volume-wrap input{width:72px;accent-color:#cbbaff;height:3px}.playlist-label{font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:#958ba9}.music-error{display:none;color:#ffbfd8;font-size:10px;line-height:1.5;margin-top:7px}.music-player.error .music-error{display:block}
+@media(max-width:520px){.music-player{top:10px;right:10px;padding:9px 10px;width:min(300px,calc(100vw - 20px))}.music-note{width:28px;height:28px}.music-controls{margin:7px 0}.music-controls button{width:27px;height:27px}}header{text-align:center;padding:65px 0 30px}.kicker,.label{font:10px Arial;letter-spacing:.24em;text-transform:uppercase;color:var(--lav)}h1{font-size:clamp(2.8rem,9vw,5rem);font-weight:normal;line-height:1.02;margin:20px 0}h1 em{color:var(--pink)}.sub{max-width:550px;margin:auto;color:var(--muted);line-height:1.85}.counter{display:inline-block;border:1px solid var(--line);border-radius:30px;padding:10px 15px;margin-top:24px;font:11px Arial;color:#e8ddff}.intro{border:1px solid var(--line);background:linear-gradient(140deg,#ffffff10,#ffffff04);border-radius:22px;padding:clamp(23px,5vw,38px);box-shadow:0 20px 65px #0003}.intro h2{font-weight:normal;font-size:1.65rem;margin:13px 0 17px}.intro p{font-size:1rem;line-height:1.95;color:#e3ddec;margin:0 0 12px}.intro p:last-child{margin:0}.star-path{display:flex;align-items:center;justify-content:center;gap:clamp(7px,2.2vw,18px);margin:22px auto 28px;max-width:560px;padding:0 8px}.path-star{position:relative;width:clamp(18px,4vw,25px);height:clamp(18px,4vw,25px);color:#746b91;filter:drop-shadow(0 0 0 transparent);transition:color .5s,filter .5s,transform .5s}.path-star svg{width:100%;height:100%;display:block}.path-star:not(.lit){opacity:.72}.path-star.lit svg{animation:starPulse 3s ease-in-out infinite alternate}@keyframes starPulse{from{transform:scale(.94)}to{transform:scale(1.08)}}.path-star.lit{color:#ffe4a8;filter:drop-shadow(0 0 8px #ffe4a8aa);transform:scale(1.12)}.path-star:not(:last-child)::after{content:"";position:absolute;left:calc(100% + 3px);top:50%;width:clamp(5px,1.5vw,13px);height:1px;background:#cbbaff55}.section-title{text-align:center;font-weight:normal;font-size:1.9rem;margin:44px 0 8px}.hint{text-align:center;color:var(--muted);font:12px/1.7 Arial;margin:0 auto 24px}.timeline{display:grid;gap:13px}.day{border:1px solid var(--line);border-radius:18px;background:#ffffff08;overflow:hidden}.day.open{background:linear-gradient(120deg,#211d38e8,#151427e8);border-color:#d9c4ff70}.day.locked{opacity:.58}.head{width:100%;display:flex;align-items:center;gap:13px;text-align:left;padding:16px;background:none;border:0;color:inherit;cursor:pointer}.num{width:42px;height:42px;flex:none;border:1px solid #d6c5ff65;border-radius:50%;display:grid;place-items:center;color:var(--pink);font:12px Arial}.meta{flex:1;min-width:0}.date{font:9px Arial;letter-spacing:.16em;color:#aaa1bc}.feeling{font-size:1.2rem;margin-top:5px}.status{font:10px Arial;color:#b6accb;white-space:nowrap}.body{display:none;padding:0 clamp(18px,5vw,35px) 25px 72px}.day.open .body{display:block;animation:appear .5s ease}.body p{white-space:pre-line;color:#e4ddec;line-height:1.95;font-size:1rem;margin:0 0 15px}.sign{color:var(--pink)!important;font-style:italic;margin-top:18px!important}.locknote{font:11px/1.6 Arial;color:#aaa1bc;padding:0 17px 16px 72px}.final[hidden]{display:none!important}.final-wait{margin-top:38px;text-align:center;border:1px solid #cdbbff30;border-radius:22px;padding:25px 22px;background:#ffffff05}.final-wait .symbol{font-size:25px;color:#cbbaff99}.final-wait h2{font-weight:normal;font-size:1.35rem;margin:10px 0}.final-wait p{color:var(--muted);line-height:1.8;max-width:510px;margin:auto}.final{margin-top:38px;text-align:center;border:1px solid #ffbfd844;border-radius:22px;padding:30px 22px;background:#ffbfd80b}.symbol{font-size:28px;color:var(--pink)}.final h2{font-weight:normal;font-size:1.65rem;margin:12px 0}.final p{color:var(--muted);line-height:1.85;max-width:510px;margin:auto}footer{text-align:center;margin-top:45px;color:#89819e;font:9px Arial;letter-spacing:.2em}@keyframes appear{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}@media(max-width:520px){main{padding:20px 14px 48px}header{padding-top:70px}.head{padding:15px 12px;gap:10px}.num{width:38px;height:38px}.body,.locknote{padding-left:61px}.status{font-size:9px}}
+</style></head><body><canvas id="stars"></canvas><div class="glow g1"></div><div class="glow g2"></div><section class="music-player" id="musicPlayer" aria-label="Reproductor de música">
+ <div class="music-top"><div class="music-note">♫</div><div class="track-meta"><div class="track-name" id="trackName">Tu pequeña banda sonora</div><div class="track-artist" id="trackArtist">Una canción a la vez · Tina ♡</div></div><span class="playlist-label">PLAYLIST</span></div>
+ <div class="music-controls">
+  <button id="prevTrack" type="button" aria-label="Canción anterior" title="Anterior">|◀</button>
+  <button id="playPause" class="primary" type="button" aria-label="Reproducir" title="Reproducir">▶</button>
+  <button id="nextTrack" type="button" aria-label="Siguiente canción" title="Siguiente">▶|</button>
+  <button id="muteBtn" type="button" aria-label="Silenciar" title="Silenciar">♫</button>
+ </div>
+ <div class="progress-row"><span id="currentTime">0:00</span><input id="seekBar" type="range" min="0" max="100" value="0" step=".1" aria-label="Posición de la canción"><span id="duration">0:00</span></div>
+ <div class="music-bottom"><span id="trackCount">0 canciones</span><div class="volume-wrap"><span>VOL</span><input id="volumeBar" type="range" min="0" max="1" value=".7" step=".01" aria-label="Volumen"></div></div>
+ <div class="music-error" id="musicError">No se encontró el archivo de esta canción. Revisa que el nombre y la carpeta coincidan.</div>
+ <audio id="music" preload="metadata"></audio>
+</section><main>
+<header><div class="kicker">3 — 10 de noviembre · nuestro quinto mes</div><h1>Siete días,<br><em>siete sentimientos.</em></h1><p class="sub">Un pequeño detalle para ti, Tina. Una carta nueva por cada día que nos acerca a nuestro día.</p><div class="counter" id="counter">✦ Preparando algo para ti</div></header>
+<section class="intro"><div class="label">Antes de empezar · Para Tina</div><h2>¿Qué es este pequeño lugar?</h2><div id="introCopy"></div></section><h2 class="section-title">Un sentimiento para cada día</h2><p class="hint">Cada carta se desbloquea en su día. Las anteriores siempre estarán disponibles para volver a leerlas. ♡</p><div class="star-path" id="starPath" aria-label="Siete estrellas, una por cada carta"></div><section class="timeline" id="timeline"></section>
+<section class="final" id="finalSection" hidden><div class="symbol">✧ ♡ ✧</div><h2 id="finalTitle"></h2><p id="finalText"></p></section>
+<section class="final-wait" id="finalWait"><div class="symbol">✧</div><h2>Y todavía queda una sorpresa…</h2><p>El último detalle te espera el 10 de noviembre. ♡</p></section><footer>HECHO CON CARIÑO · UN DÍA A LA VEZ</footer></main>
+<script>
+const introParagraphs=["Esta página es un pequeño detalle antes de nuestro quinto mes juntos. Realmente no he hecho páginas antes; solo me acordé de que me gustaba hacerlo en el colegio y de que aprendí un par de cosas en la U también, xd (ChatGPT corrigió algunos errores también, xd).", "Ahora sí, hablando en serio: espero que te guste este pequeño detalle y cada una de las cosas que vas a leer. Y si no, acepto quejas al correo. Esta página es una cuenta regresiva diferente. Desde hoy y hasta nuestro día, vas a encontrar una carta nueva cada día. Cada una tiene como título algo que despiertas en mí y guarda unas palabras que quiero dedicarte. Realmente, siete no alcanzan para todo lo que generas en mí. Quién sabe, puede que en otro momento haga otra con una carta nueva para cada uno de los 365 días del año, pero vamos poco a poco, xd.", "No tienes que leerlas todas de una vez: quiero que cada día tengas una razón nueva para sonreír y recordar lo mucho que significas para mí. Gracias por estar aquí y por compartir conmigo este pedacito de camino. ♡"];
+const cards=[{"date": "3 NOV", "title": "Tranquilidad", "message": "Quiero comenzar con la paz que me da tenerte a mi lado. Cuando caminamos, cuando comemos o cuando vamos a conocer un lugar nuevo, siento una calma que nunca había experimentado antes.\n\nQuizás sea por lo nervioso que suelo ser o por la poca confianza que a veces tengo en mí mismo, pero cuando estoy contigo esos nervios y todo lo malo parecen desaparecer.\n\nEs como cuando tienes un día pesado y por fin puedes llegar a casa, quitarte todo ese peso de encima y simplemente descansar. Creo que esa comparación define bastante bien lo que siento cuando estoy contigo: eres ese lugar al que llego y donde puedo estar tranquilo.\n\nY espero que algún día yo también pueda ser esa casa para ti, ese lugar donde puedas descansar, sentirte segura y dejar por un momento todas tus preocupaciones afuera."}, {"date": "4 NOV", "title": "Alegría", "message": "La primera vez que salimos siendo novios todavía no me lo creía. Y si te soy sincero, a veces todavía me cuesta creerlo.\n\nTener a alguien cuya simple presencia sea capaz de dibujarte una sonrisa en los labios es algo único. Antes pensaba que la felicidad era algo que podía alcanzar estando solo, pero contigo he descubierto que también se encuentra en compartir risas, conversar o simplemente disfrutar de tenerte cerca.\n\nY claro, no todo es risa. También existen momentos de miedo, preocupación o tristeza, pero incluso en medio de ellos encuentro una forma de alegría: saber que no tengo que enfrentar todo eso sin alguien a mi lado.\n\nCreo que eso es lo bonito de compartir la vida contigo. No necesito que todos los días sean perfectos para encontrar motivos para sonreír; muchas veces me basta con saber que estás en ellos."}, {"date": "5 NOV", "title": "Admiración", "message": "Bueno, realmente no sé si la admiración es un sentimiento, aunque creo que sí, y si no, no importa. Lo que quería decirte es lo impresionado que estoy con la persona que eres y con todo lo que has logrado.\n\nAdmiro que seas alguien con un pensamiento firme e inteligente, pero que también tenga un corazón amable y se preocupe por los demás. Admiro que le pongas la cara a los problemas en lugar de evitarlos, que busques la manera de enfrentarlos y encontrar una salida.\n\nIndecisa, sí, pero con la valentía suficiente para tomar grandes decisiones y seguir adelante con ellas.\n\nEstoy seguro de que vas a tener un futuro excelente, tanto como profesional como persona. Tienes muchas cualidades que te van a llevar muy lejos, y espero que nunca dejes de reconocerlas, incluso cuando tú misma no puedas verlas.\n\nSé que no te gustan mucho los halagos ni los cumplidos, así que perdóname esta vez. Solo quería decirte que espero que se me peguen todas esas cosas maravillosas que admiro de ti, porque si hay alguien de quien me gustaría aprender, es de ti."}, {"date": "6 NOV", "title": "Ternura", "message": "Más de una vez me he quedado viéndote como bobo y tú me dices: «¿Qué me ves? Ya no me veas, no me gusta».\n\nPues espero que aquí encuentres la respuesta a esos momentos.\n\nY es que va mucho más allá de lo que ven mis ojos. Cuando me quedo mirándote, no pienso solamente en tu aspecto físico, sino también en todo lo que haces por mí, en lo que sientes y en esa forma tan cálida y tierna que tienes de comportarte conmigo.\n\nTodo eso me deja como un bobo, con un millón de pensamientos sobre ti que, muchas veces, no sé cómo expresar. Y creo que la única forma que encuentro de hacerlo es quedarme mirando esos ojos que me enseñan que soy capaz de tomarle la mano a alguien, de preocuparme por alguien más y, sobre todo, de amar.\n\nQuizás por eso me cuesta tanto dejar de mirarte. Porque cuando lo hago, no solo te estoy viendo a ti; también estoy descubriendo una parte de mí que no conocía."}, {"date": "7 NOV", "title": "Confianza", "message": "Puede que esta sea la carta que más pena me dé escribir.\n\nUna vez te dije que soy un poco celoso, y sé que es algo que debo cambiar y trabajar en mí. Pero durante estos cinco meses juntos he aprendido que no necesito ser celoso contigo. La confianza que estamos construyendo me da la tranquilidad de saber que puedes seguir haciendo tus cosas, salir, compartir con otras personas y disfrutar de tu vida sin que tengas que estar siempre a mi lado.\n\nCreo que hay dos palabras que definen muy bien lo que estamos construyendo: respeto y confianza.\n\nY esto va mucho más allá de los celos. Eres alguien con quien puedo ser yo mismo, hablar de cualquier cosa y abrirme sin miedo a sentirme juzgado. Puedo mostrarte partes de mí que quizás no le muestro a cualquiera, porque confío en ti y en la persona que eres.\n\nTambién quiero que sepas que tú puedes tener esa misma confianza en mí. No quiero que tengas que dudar de mis intenciones ni sentir que debes ocultarme algo por miedo a mi reacción. Quiero ser alguien con quien puedas sentirte libre, escuchada y segura, porque nunca quisiera traicionar toda esa confianza que me das.\n\nSé que todavía tengo cosas por mejorar, pero quiero seguir construyendo contigo una relación en la que los dos podamos ser nosotros mismos, sin dejar de elegirnos y respetarnos."}, {"date": "8 NOV", "title": "Inspiración", "message": "Sé que no soy el mejor entre las 8.324 millones de personas que hay en el mundo y que todavía tengo muchas cosas por mejorar. Pero no quiero ser perfecto para los demás, quiero ser alguien de quien tú puedas sentirte orgullosa y uno de esos 8.324 millones que puedas seguir eligiendo cada día.\n\nY esa es precisamente la inspiración que me motiva a ser mejor: como hijo, estudiante, amigo, hermano, persona y, sobre todo, como novio.\n\nSé que no es algo fácil. Hay días en los que siento que no lo consigo, en los que me equivoco o en los que todavía tengo mucho que aprender. Pero también sé que vale la pena seguir intentándolo, porque tú eres alguien que vale la pena.\n\nNo quiero cambiar quién soy para convertirme en alguien diferente, quiero seguir creciendo y construyendo una mejor versión de mí mismo. Y me hace mucha ilusión que, de alguna manera, tú seas parte de ese camino."}, {"date": "9 NOV", "title": "Gratitud", "message": "Y así llegamos al «final» de estas cartas. Primero que todo, gracias por tomarte el tiempo de leerlas todas.\n\nDespués de escribirte cada una, puedo decir que me siento tranquilo de saber que tengo a alguien como tú a mi lado; alegre de saber que alguien a quien admiro tanto es mi pareja; y afortunado de compartir mis días con una persona que me hace ver lo bueno, lo malo, pero sobre todo lo lindo y lo tierno de la vida.\n\nTengo la confianza de que, incluso cuando las cosas no estén tan bien, podremos encontrar la manera de seguir adelante. Y eso me inspira a continuar construyendo contigo algo bonito y sano, donde los dos podamos sentirnos cómodos, tranquilos y felices.\n\nSé que muchas veces se me olvida decirlo y que no siempre soy el mejor haciéndote notar lo que siento, pero estoy muy agradecido por todo lo que haces por mí, incluso por esas cosas de las que a veces ni siquiera me doy cuenta.\n\nMi corazón se llena de gratitud con la vida por darme el placer de compartirla con alguien tan especial y única como tú.\n\nY aunque estas siete cartas lleguen a su final, espero que nunca se terminen las razones para seguir escribiéndote cosas bonitas."}];
+function bogotaDateString(date=new Date()){
+ const parts=new Intl.DateTimeFormat("en-US",{timeZone:"America/Bogota",year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(date);
+ const part=type=>parts.find(p=>p.type===type).value;
+ return `${part("year")}-${part("month")}-${part("day")}`;
+}
+const todayStr=bogotaDateString();
+const today=new Date(`${todayStr}T12:00:00-05:00`),start=new Date("2026-11-03T12:00:00-05:00"),days=Math.floor((today-start)/86400000),unlocked=Math.max(0,Math.min(7,days+1)),anniversary=todayStr>="2026-11-10";
+// Si la página permanece abierta durante la medianoche colombiana, actualiza los desbloqueos.
+setInterval(()=>{if(bogotaDateString()!==todayStr) location.reload();},60000);
+const finalSection=document.getElementById("finalSection"),finalWait=document.getElementById("finalWait");
+if(anniversary){
+ finalSection.hidden=false; finalWait.hidden=true;
+ document.getElementById("finalTitle").textContent=todayStr==="2026-11-10"?"Y cuando llegue el día 10…":"Hoy la sorpresa es en persona…";
+ document.getElementById("finalText").textContent="Llegamos al día que estábamos esperando, Tina. Durante estos siete días te regalé algunas de las palabras que llevo conmigo. Pero hay cosas que no quería dejar escritas en una pantalla. Esta vez quiero que puedas sostenerlas entre tus manos. Feliz nuestro día, mi novia. ♡";
+}
+document.getElementById("introCopy").innerHTML=introParagraphs.map(p=>"<p>"+p+"</p>").join("");
+const counter=document.getElementById("counter");if(anniversary){counter.textContent="♡ Hoy es nuestro día · 10 de noviembre";}else if(unlocked>0)counter.textContent=`♡ ${unlocked} de 7 cartas desbloqueadas`;else counter.textContent="✦ La primera carta se abre el 3 de noviembre";if(todayStr>"2026-11-10"){counter.textContent="♡ Nuestro día ya llegó · vuelve a leer estas cartas";}
+const path=document.getElementById("starPath");for(let i=0;i<7;i++){const star=document.createElement("span");star.className="path-star"+(i<unlocked||anniversary?" lit":"");star.innerHTML='<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.8l2.8 6.1 6.7.8-4.9 4.6 1.3 6.6L12 16.6l-5.9 3.3 1.3-6.6-4.9-4.6 6.7-.8z"/></svg>';path.append(star)}
+const list=document.getElementById("timeline");cards.forEach((c,i)=>{const ok=anniversary||i<unlocked,a=document.createElement("article");a.className="day"+(ok?" open":" locked");const b=document.createElement("button");b.className="head";b.type="button";b.setAttribute("aria-expanded",ok?"true":"false");b.innerHTML=`<span class="num">${String(i+1).padStart(2,"0")}</span><span class="meta"><span class="date">${c.date} · DÍA ${i+1}</span><br><span class="feeling">${c.title}</span></span><span class="status">${ok?"Desbloqueada":"Cerrada 🔒"}</span>`;if(ok){const body=document.createElement("div");body.className="body";c.message.split(/\\n\\s*\\n/).forEach(part=>{const p=document.createElement("p");p.textContent=part;body.append(p)});const s=document.createElement("p");s.className="sign";s.textContent="Para ti, Tina. ♡";body.append(s);a.append(b,body);b.addEventListener("click",()=>{const show=a.classList.toggle("open");body.style.display=show?"block":"none";b.setAttribute("aria-expanded",show?"true":"false")})}else{const n=document.createElement("div");n.className="locknote";n.textContent=`Esta carta se desbloqueará el ${c.date.toLowerCase()}. Vuelve mañana. ♡`;a.append(b,n)}list.append(a)});
+// Playlist: agrega canciones aquí y coloca sus archivos junto a index.html.
+ // Puedes cambiar título, artista y archivo sin modificar el reproductor.
+ const playlist=[
+  {title:"Can't Take My Eyes Off You",artist:"Frankie Valli",src:"cant-take-my-eyes-off-you.mp3"},
+  {title:"Can't Help Falling in Love",artist:"Elvis Presley",src:"cant-help-falling-in-love.mp3"},
+  {title:"Por Ti",artist:"3AM.",src:"por-ti-3am.mp3"},
+  {title:"Love Never Felt So Good",artist:"Michael Jackson.",src:"love-never-felt-so-good.mp3"},
+  {title:"Coqueta",artist:"Fuerza Regida y Grupo Frontera.",src:"coqueta-fuerza-regida-grupo-frontera.mp3"},
+  {title:"All of Me",artist:"John Legend",src:"all-of-me-john-legend.mp3"}
+ ];
+ const audio=document.getElementById("music"),player=document.getElementById("musicPlayer");
+ const playPause=document.getElementById("playPause"),muteBtn=document.getElementById("muteBtn");
+ const seekBar=document.getElementById("seekBar"),volumeBar=document.getElementById("volumeBar");
+ const trackName=document.getElementById("trackName"),trackArtist=document.getElementById("trackArtist");
+ const currentTime=document.getElementById("currentTime"),duration=document.getElementById("duration");
+ const trackCount=document.getElementById("trackCount"),musicError=document.getElementById("musicError");
+ let trackIndex=0,isSeeking=false;
+ audio.volume=Number(volumeBar.value);
+ trackCount.textContent=`${playlist.length} canciones`;
+ function timeLabel(value){if(!Number.isFinite(value))return "0:00";const m=Math.floor(value/60),s=Math.floor(value%60);return `${m}:${String(s).padStart(2,"0")}`}
+ function showTrack(){const track=playlist[trackIndex];trackName.textContent=track.title;trackArtist.textContent=track.artist;trackCount.textContent=`${trackIndex+1} / ${playlist.length}`;musicError.textContent="No se encontró «"+track.src+"». Revisa que el archivo esté junto a index.html.";player.classList.remove("error");}
+ function loadTrack(index,autoplay=false){trackIndex=(index+playlist.length)%playlist.length;showTrack();audio.src=playlist[trackIndex].src;audio.load();seekBar.value=0;currentTime.textContent="0:00";duration.textContent="0:00";if(autoplay)playAudio()}
+ async function playAudio(){if(!playlist.length)return;try{await audio.play();playPause.textContent="Ⅱ";playPause.setAttribute("aria-label","Pausar");playPause.title="Pausar";player.classList.remove("error")}catch(e){player.classList.add("error");playPause.textContent="▶";playPause.setAttribute("aria-label","Reproducir")}}
+ function pauseAudio(){audio.pause();playPause.textContent="▶";playPause.setAttribute("aria-label","Reproducir");playPause.title="Reproducir"}
+ playPause.addEventListener("click",()=>{if(audio.paused)playAudio();else pauseAudio()});
+ document.getElementById("nextTrack").addEventListener("click",()=>loadTrack(trackIndex+1,true));
+ document.getElementById("prevTrack").addEventListener("click",()=>{if(audio.currentTime>3){audio.currentTime=0}else loadTrack(trackIndex-1,true)});
+ muteBtn.addEventListener("click",()=>{audio.muted=!audio.muted;muteBtn.textContent=audio.muted?"×♫":"♫";muteBtn.setAttribute("aria-label",audio.muted?"Activar sonido":"Silenciar");muteBtn.title=audio.muted?"Activar sonido":"Silenciar"});
+ volumeBar.addEventListener("input",()=>{audio.volume=Number(volumeBar.value);if(audio.volume>0&&audio.muted){audio.muted=false;muteBtn.textContent="♫"}});
+ audio.addEventListener("timeupdate",()=>{if(!isSeeking&&Number.isFinite(audio.duration)&&audio.duration>0)seekBar.value=(audio.currentTime/audio.duration)*100;currentTime.textContent=timeLabel(audio.currentTime)});
+ audio.addEventListener("loadedmetadata",()=>{duration.textContent=timeLabel(audio.duration);seekBar.value=0});
+ seekBar.addEventListener("input",()=>{isSeeking=true;if(Number.isFinite(audio.duration))currentTime.textContent=timeLabel(audio.duration*(Number(seekBar.value)/100))});
+ seekBar.addEventListener("change",()=>{if(Number.isFinite(audio.duration))audio.currentTime=audio.duration*(Number(seekBar.value)/100);isSeeking=false});
+ audio.addEventListener("ended",()=>loadTrack(trackIndex+1,true));
+ audio.addEventListener("error",()=>{player.classList.add("error");pauseAudio()});
+ if(playlist.length)loadTrack(0,false);else{trackName.textContent="Añade canciones a tu playlist";trackArtist.textContent="Edita la lista en index.html";trackCount.textContent="0 canciones";playPause.disabled=true}
+(()=> {
+ const canvas=document.getElementById("stars"), ctx=canvas.getContext("2d");
+ let w=0,h=0,stars=[];
+ const rand=(a,b)=>a+Math.random()*(b-a);
+ function resize(){
+   const d=Math.min(devicePixelRatio||1,2); w=innerWidth; h=innerHeight;
+   canvas.width=w*d; canvas.height=h*d; ctx.setTransform(d,0,0,d,0,0);
+   stars=Array.from({length:Math.min(170,Math.floor(w*h/5600))},()=>({x:rand(0,w),y:rand(0,h),r:rand(.35,1.15),phase:rand(0,6.28),speed:rand(.0005,.0018)}));
+ }
+ function line(points,alpha=.18,width=1,dash=[]){
+   ctx.save();ctx.beginPath();points.forEach(([x,y],i)=>i?ctx.lineTo(x,y):ctx.moveTo(x,y));
+   ctx.strokeStyle=`rgba(220,225,255,${alpha})`;ctx.lineWidth=width;ctx.setLineDash(dash);ctx.stroke();ctx.restore();
+ }
+ function glowStar(x,y,r,alpha=.8){
+   ctx.save();ctx.shadowColor=`rgba(255,235,190,${alpha})`;ctx.shadowBlur=r*5;
+   ctx.fillStyle=`rgba(255,239,205,${alpha})`;ctx.beginPath();ctx.arc(x,y,r,0,Math.PI*2);ctx.fill();
+   ctx.restore();
+ }
+ function path(points,alpha=.08,width=1.1){
+   ctx.save();ctx.beginPath();points.forEach(([x,y],i)=>i?ctx.lineTo(x,y):ctx.moveTo(x,y));
+   ctx.strokeStyle=`rgba(226,225,244,${alpha})`;ctx.lineWidth=width;ctx.lineCap="round";ctx.lineJoin="round";ctx.stroke();ctx.restore();
+ }
+ function mapPoints(origin,scale,pts){return pts.map(([x,y])=>[origin[0]+x*scale,origin[1]+y*scale]);}
+ // Aquarius: the recognizable zig-zag asterism, with a whisper-light water-bearer silhouette.
+ function aquarius(){
+   const s=Math.min(w/900,h/700,1), ox=w*.52, oy=h*.25, sc=s*1.18;
+   const p=mapPoints([ox,oy],sc,[[-95,-18],[-52,-48],[-8,-35],[42,-67],[92,-91],[127,-48],[82,-8],[35,17],[-12,3],[-48,48],[-92,74],[-132,38],[-112,-2]]);
+   const chains=[[0,1,2,3,4],[2,5,6,7,8],[8,9,10,11,12]];
+   chains.forEach(ch=>line(ch.map(i=>p[i]),.24,1.15));
+   p.forEach((q,i)=>glowStar(q[0],q[1],i===2||i===8?2.25:1.65,.7));
+   // Faint outline suggesting the water bearer, never competing with the stars.
+   const figure=mapPoints([ox,oy+5*sc],sc,[[-66,-93],[-47,-109],[-24,-103],[-12,-78],[-20,-54],[-6,-31],[20,-18],[43,-24],[58,-48],[51,-69],[65,-85],[81,-81],[91,-60],[78,-42],[70,-13],[56,14],[38,29],[17,34],[-2,24],[-19,3],[-31,-20],[-45,-37],[-65,-45]]);
+   path(figure,.045,1.1);
+   // Water stream: a few faint dotted arcs.
+   for(let i=0;i<9;i++){const x=ox+(52+i*5)*sc,y=oy+(38+i*3)*sc;glowStar(x,y,.65,.22)}
+   ctx.save();ctx.fillStyle="rgba(211,207,237,.18)";ctx.font=`${Math.max(7,8*s)}px Arial`;ctx.textAlign="center";ctx.fillText("A Q U A R I U S",ox,oy+105*sc);ctx.restore();
+ }
+ function cat(){
+   const s=Math.min(w/1000,h/800,1),ox=w*.13,oy=h*.55,sc=s*.9;
+   // Delicate continuous outline based on the seated-cat reference.
+   const silhouette=mapPoints([ox,oy],sc,[[ -55,42],[-72,31],[-75,10],[-65,-12],[-45,-29],[-18,-39],[4,-42],[17,-58],[25,-84],[37,-99],[45,-76],[60,-87],[66,-65],[78,-52],[79,-33],[69,-19],[58,-14],[50,10],[45,42],[55,54],[43,58],[28,54],[22,42],[20,12],[7,31],[-9,42],[-29,49],[-52,48],[-67,39],[-78,24],[-82,8],[-75,-3]]);
+   path(silhouette,.075,1.25);
+   const constellation=mapPoints([ox,oy],sc,[[-63,27],[-38,5],[-12,-28],[15,-47],[40,-64],[62,-43],[49,-16],[28,3],[8,28]]);
+   [[0,1,2,3,4,5,6,7],[1,8]].forEach(ch=>line(ch.map(i=>constellation[i]),.22,1));
+   constellation.forEach((q,i)=>glowStar(q[0],q[1],i===3?2:1.45,.62));
+ }
+ function tulip(){
+   const s=Math.min(w/1000,h/800,1),ox=w*.84,oy=h*.57,sc=s*.82;
+   // Botanical engraving-like tulip, very low contrast.
+   path(mapPoints([ox,oy],sc,[[0,70],[1,36],[-2,5],[-15,-12],[-20,-35],[-11,-27],[-3,-44],[5,-27],[15,-39],[18,-17],[8,-4],[1,4]]),.09,1.15);
+   path(mapPoints([ox,oy],sc,[[0,39],[-25,15],[-42,9],[-31,31],[-10,47]]),.07,1);
+   path(mapPoints([ox,oy],sc,[[1,47],[21,20],[39,12],[30,36],[9,52]]),.07,1);
+   const pts=mapPoints([ox,oy],sc,[[-19,-34],[-10,-27],[-3,-44],[5,-27],[15,-39],[18,-17],[8,-4],[1,4]]);
+   line([pts[0],pts[2],pts[4],pts[5],pts[6],pts[7],pts[0]],.16,.9);
+   pts.forEach((q,i)=>{if(i%2===0)glowStar(q[0],q[1],1.25,.48)});
+ }
+ function smallMotifs(){
+   // Tiny, almost hidden nods to the giraffe and cow: constellation dots, not cartoons.
+   const s=Math.min(w/1000,h/800,1);
+   const giraffe=mapPoints([w*.13,h*.83],s*.55,[[-8,25],[-7,4],[-4,-8],[-4,-25],[-8,-33],[-3,-36],[2,-30],[8,-35],[11,-28],[5,-22],[4,-7],[11,3],[12,25]]);
+   line(giraffe,.11,.8);giraffe.filter((_,i)=>i%2===0).forEach(q=>glowStar(q[0],q[1],1,.35));
+   const cow=mapPoints([w*.86,h*.83],s*.58,[[0,-25],[-10,-31],[-17,-24],[-14,-12],[-17,0],[-10,12],[0,17],[10,12],[17,0],[14,-12],[17,-24],[10,-31],[0,-25]]);
+   line(cow,.10,.8);cow.filter((_,i)=>i%2===0).forEach(q=>glowStar(q[0],q[1],1,.32));
+ }
+ function draw(t){
+   ctx.clearRect(0,0,w,h);
+   stars.forEach(q=>{const a=.2+.45*(.5+.5*Math.sin(t*q.speed+q.phase));ctx.beginPath();ctx.arc(q.x,q.y,q.r,0,Math.PI*2);ctx.fillStyle=`rgba(225,224,255,${a})`;ctx.fill()});
+   // Sparse coordinate rings and crosshairs evoke a quiet planetarium chart.
+   ctx.save();ctx.strokeStyle="rgba(197,190,230,.035)";ctx.lineWidth=1;
+   const cx=w*.52,cy=h*.25,r=Math.min(w,h)*.20;
+   ctx.beginPath();ctx.arc(cx,cy,r,0,Math.PI*2);ctx.stroke();
+   ctx.beginPath();ctx.arc(cx,cy,r*.72,0,Math.PI*2);ctx.stroke();
+   ctx.beginPath();ctx.moveTo(cx-r-8,cy);ctx.lineTo(cx+r+8,cy);ctx.moveTo(cx,cy-r-8);ctx.lineTo(cx,cy+r+8);ctx.stroke();ctx.restore();
+   aquarius();cat();tulip();smallMotifs();
+   requestAnimationFrame(draw);
+ }
+ addEventListener("resize",resize);resize();requestAnimationFrame(draw);
+})();</script></body></html>
